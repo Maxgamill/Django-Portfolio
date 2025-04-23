@@ -1,0 +1,330 @@
+/* Colour Variables */
+:root{
+    --colour1: #594f4f;
+    --colour2: #577980;
+    --colour3: #45ADA8;
+    --maintxt: ghostwhite;
+    --headtxt: white;
+}
+
+/* Header CSS */
+.mainHeader {
+    background-color: var(--colour1);        
+    padding: 1.25em;        
+    text-align: center;
+}
+h1{
+    color: var(--headtxt);
+    font-family: "Skia Light";
+}
+body{
+    margin: 0;        
+    color: var(--maintxt);
+    text-align: left;
+}
+span{
+    display: block;
+}
+page{
+    padding: 0em 5em;
+}
+.maintxt{
+    text-align: left;
+}
+/* Navigation Menu CSS */
+.navBlockMenu{
+    display: inline;        
+    font-size: 5em;        
+    float: left;        
+    width: 33.33%;        
+    overflow: auto;        
+    background-color: var(--colour2);        
+    color: var(--headtxt);        
+    cursor: pointer;        
+    border: none;        
+    font-family: "Times New Roman";
+    position: sticky;   
+}
+.active, .navBlockMenu:hover{
+    background-color: var(--colour1);
+    color: var(--colour3);        
+    transition: 0.35s;
+}
+.content{          
+    clear: both;        
+    transition: max-height 0.35s ease-out;               
+    overflow: auto;
+    background-image: var(--colour1);
+    color: var(--maintxt);
+}
+.show{
+    display: block; 
+}
+.hide{
+    display: none; 
+}
+
+/* About Page CSS */
+.aboutText{
+    float: right;
+    padding: 5em 5em 5em 2.5em;
+    width: 40%;
+}
+.aboutPicMe{
+    float: left;
+    width: 43%;
+    height: auto;
+    margin-left: 31%;
+    margin-right: 31%;
+}
+.aboutPics{
+    width: 70%;
+    height: auto;
+    float: left;              
+    overflow: auto;                            
+    border: none;        
+    padding: 3% 0%;
+    margin-left: 15%;
+}
+
+/* Project Navigation CSS */
+.mySlides{
+    display: none;
+}
+.slideShowImg{
+    height: 200px;
+    width: auto; 
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 5em;
+    padding-bottom: 1em;
+    display: block;
+    transition: 0.6s;
+}
+.slideshowContainer{
+    margin: auto;
+    position: relative;
+    max-width: 100%;
+}
+.slideshowDot{
+    height: 2em;
+    width: 2em;
+    margin: 0 0.2em;
+    background-color: var(--colour1);
+    border-radius: 50%;
+    display: inline-block;
+    transition: 0.6s ease;
+    cursor: pointer;
+}
+.activeDot, .slideshowDot:hover{
+    background-color: var(--colour3);
+}
+.arrowButtonPrev, .arrowButtonNext{
+    cursor: pointer;
+    color: var(--colour3);
+    padding: 3em 2em 3em 2em;
+    user-select: none;
+    font-weight: bold;
+    font-size: 32pt;
+    top: 50%;
+    border-radius: 0 1em 1em 0;
+    position: absolute;
+    transition: 0.6s;
+    width: auto;
+    margin-top: -4em;
+}
+.arrowButtonNext{
+    right: 0;
+    border-radius: 1em 0 0 1em;
+}
+.arrowButtonPrev:hover, .arrowButtonNext:hover{
+    background-color: var(--colour1);
+}
+.arrowButtonNext:active, .arrowButtonPrev:active{
+    transform: translateY(10px)
+}
+.fade {
+    -webkit-animation-name: fade;
+    -webkit-animation-duration: 1.5s;
+    animation-name: fade;
+    animation-duration: 1.5s;
+}
+@-webkit-keyframes fade{
+    from {opacity: .4}
+    to {opacity: 1}
+}
+@keyframes fade {
+    from {opacity: .4;}
+    to {opacity: 1;}
+}
+.h2{
+    padding: 1.5em;
+    color: var(--colour3);
+    font-weight: bold;
+    font-size: 22px;
+    text-align: center;
+}
+
+/* Project Explanation CSS */
+.projectContent{
+    display: none;
+}
+.brief{
+    background-color: var(--colour2);
+    overflow: auto;
+}
+.giag{
+    background-color: var(--colour1);
+    overflow: auto;
+}
+.breakdown{
+    background-color: var(--colour3);
+    overflow: auto;
+}
+.leftBox{
+    width: 42.5%;
+    padding: 2% 2.5% 2% 4%;
+    text-align: center;
+    float: left;
+}
+.rightBox{
+    width: 42.5%;
+    padding: 2% 4% 2% 2.5%;
+    text-align: center;
+    float: right;
+}
+.inputTest{
+    size: 6%;
+    margin-top: 22%;
+    margin-bottom: 22%;
+}
+h3{
+    font-size: 18pt;
+    color: var(--headtxt);
+    font-family: 'Times New Roman';
+    font-weight: bold;
+    text-align: center;
+}
+h4{
+    font-size: 16pt;
+    color: var(--headtxt);
+    font-family: 'Times New Roman';
+    font-weight: bold;
+    text-align: left;
+}
+.input{
+    background-color: #ffffff;
+}
+.canvas{
+    overflow: hidden;
+    border: groove;
+    width: 267px;
+    height: 292px;
+    margin-top: 4%;
+}
+.w100{
+    width: 100%;
+}
+.css{
+    transition: .5s ease;
+    display: inline-block;
+    height: 170px;
+    width: 30%;
+    background: url(../media/portfolio/css.png) no-repeat;
+    background-size: 100%;
+    margin-left: 8%;
+}
+.css:hover{
+    background: url(../media/portfolio/cssroll.png) no-repeat;
+    background-size: 100%;
+}
+.html{
+    transition: .5s ease;
+    display: inline-block;
+    height: 170px;
+    width: 30%;
+    background: url(../media/portfolio/html.png) no-repeat;
+    background-size: 100%;
+    margin-right: 8%;
+}
+.html:hover{
+    background: url(../media/portfolio/htmlroll.png) no-repeat;
+    background-size: 100%;
+}
+.submit{
+    display: inline-block;
+}
+.inputSod{
+    width: 8%;
+    margin: 2%;
+}
+.sodbox{
+    display: block;
+}
+.graph{
+    display: none; 
+    transition: 0.5s; 
+    padding-top: 5%;
+    width: 100%;
+}
+.loader{
+    border: 1em solid var(--colour2);
+    border-radius: 50%;
+    border-top: 1em solid var(--colour3);
+    width: 5em;
+    height: 5em;
+    animation: spin 2s linear infinite;
+    display: none;
+    margin: 10%;
+}
+@-webkit-keyframes spin{
+    0% { -webkit-transform: rotate(0deg); }
+    100% { -webkit-transform: rotate(360deg); }
+}
+@keyframes spin{
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+/* Contact Page CSS */
+.email{
+    transition: .5s ease;
+    height: 100px;
+    width: 24%;
+    margin-left: 53%;
+    margin-right: 23%;
+    background: url(../media/contact/email.png) no-repeat;
+    background-size: 100%;
+}
+.email:hover{
+    background: url(../media/contact/emailroll.png) no-repeat;
+    background-size: 100%;
+}
+.linkedin{
+    height: 100%;
+    width: 24.44%;
+    margin-left: 37.78%;
+    margin-right: 37.78%;
+    overflow: hidden;
+}
+.cv{
+    transition: .5s ease;
+    height: 100px;
+    width: 43%;
+    margin-left: 13.5%;
+    margin-right: 43.5%;
+    background: url(../media/contact/download.png) no-repeat;
+    background-size: 100%;
+}
+.cv:hover{
+    background: url(../media/contact/downloadroll.png) no-repeat;
+    background-size: 100%;
+}
+.contImages{
+    display: inline;
+    width: 33.3%;
+    height: 100px;
+    float: left;              
+    overflow: auto;                            
+    border: none;  
+}
