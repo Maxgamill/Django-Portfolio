@@ -6,7 +6,7 @@ projects I completed at University.
 ## Summary
 Watch the short video below which takes you on a short tour of the site:
 
-![site_tour.mov](site_tour.mov)
+[![Watch the video](site_tour_sc.png)](https://youtu.be/WqrzS8P0hPI)
 
 ## Installation Instructions
 As the webserver is currently down to enable new projects, please follow the
